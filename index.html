@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LacedSim HUD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f1f9;
+      color: #222;
+      text-align: center;
+      padding: 2rem;
+    }
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    h1 {
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+    }
+    .section {
+      margin: 1.5rem 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "• ";
+      color: #ff69b4;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://example.com/kreejai-avatar.jpg" alt="Avatar" />
+  <h1>Kree’Jai Chardae Jackson-James</h1>
+  <p><strong>Mood:</strong> 💅 Glam & Unbothered</p>
+
+  <div class="section">
+    <p><strong>Time:</strong> <span id="time">Loading...</span></p>
+    <p><strong>Weather:</strong> <span id="weather">Loading...</span></p>
+  </div>
+
+  <div class="section">
+    <p><strong>Bank Balance:</strong> $<span id="bank">Loading...</span></p>
+    <p><strong>Spoiled Status:</strong> Spoiled as hell 💸</p>
+  </div>
+
+  <div class="section">
+    <p><strong>Active HUDs:</strong></p>
+    <ul>
+      <li>📱 Phone HUD</li>
+      <li>👠 Closet</li>
+    </ul>
+  </div>
+
+  <script>
+    fetch('https://laced-s
